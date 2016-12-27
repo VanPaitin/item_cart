@@ -5,7 +5,7 @@ var AllItems = React.createClass({
         <div key={item.id}>
           <Item item={item}
                 handleDelete={() => this.props.handleDelete(item.id)}
-                handleUpdate={item => this.props.onUpdate(item)} />
+                handleUpdate={this.props.onUpdate} />
         </div>
       )
     })

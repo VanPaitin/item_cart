@@ -3,6 +3,7 @@ var NewItem = React.createClass({
     var name = this.refs.name.value;
     var description = this.refs.description.value;
     handleSubmit = this.props.handleSubmit
+    $("input").val("")
     $.ajax({
       url: '/api/v1/items',
       type: 'POST',
